@@ -3,45 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entenda mais Sobre o Gustavo</title>
     <link rel="stylesheet" href="../assets/css/styleGustavo.css">
+    <title>GS.dev | Portfólio Pessoal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Entenda mais sobre o Gustavo</h1>
-    <p>Um pouco sobre quem eu sou, o que faço e o que me move.</p>
-</header>
+    <div class="tela-menu" id="menuLateral">
+        <div class="tela-menu-3">
+            <a href="#">Página Inicial</a>
+            <a href="#apresentacao">Minha História</a>
+            <a href="#lugares">Viagens</a>
+        </div>
+    </div>
+    
+    <header class="header">
+        <div id="barra-menu" style="cursor: pointer;">
+            <span class="barra-text" style="font-size: 30px;">&#9776;</span>
+        </div>
 
-<main>
-    <section id="perfil">
-        <h2>Perfil Pessoal</h2>
-        <p>Nome: <strong>Gustavo [Seu Sobrenome]</strong></p>
-        <p>Idade: 17 anos (2º ano do Ensino Médio)</p>
-    </section>
+        <div class="logo-pessoal">
+            <h1>GS<span>.dev</span></h1>
+        </div>
 
-    <section id="sobre-mim">
-        <h2>Quem é o Gustavo?</h2>
-        <p>
-            Sou uma pessoa curiosa que adora aprender sobre tecnologia e desenvolvimento de sistemas. 
-            No meu tempo livre, gosto de praticar esportes e explorar novos jogos com meus amigos. 
-            Meu objetivo atual é me aprofundar no mundo da programação para criar soluções inovadoras no futuro.
-        </p>
-    </section>
+        <nav class="nav">
+            <a href="#apresentacao">Sobre</a>
+            <a href="#lugares">Viagens</a>
+            <p class="divisor-nav">|</p>
+            <p class="usuario">Explorador</p>
+        </nav>
+    </header>
 
-    <section id="hobbies">
-        <h2>Minhas Paixões</h2>
-        <ul>
-            <li>💻 Programação e Desenvolvimento Web</li>
-            <li>⚽ Jogar futebol nos fins de semana</li>
-            <li>🎧 Ouvir podcasts sobre ciência e inovação</li>
-        </ul>
-    </section>
-</main>
+    <main>
+        <section id="apresentacao" class="section-container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <hr class="section-divider">
+            <div class="sobre-conteudo">
+                <p>Olá! Eu sou o Gustavo. Atualmente mergulhado no mundo do desenvolvimento, fascinado por linguagens de baixo nível como <strong>Assembly</strong> e com o grande sonho de, um dia, alcançar as estrelas como <strong>Astronauta</strong>.</p>
+                <p>Quando não estou codando, estou lendo Manhwas ou planejando minha próxima aventura pelo globo.</p>
+            </div>
+        </section>
+    
+        <section id="lugares" class="section-container">
+            <h2 class="section-title">Destinos que quero Visitar</h2>
+            <hr class="section-divider">
+    
+            <div class="grid-paises">
+                <div class="card-pais">
+                    <div class="foto-pais" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=500');"></div>
+                    <div class="info-pais">
+                        <h3>Kyoto, Japão</h3>
+                        <p>Explorar templos antigos e a tecnologia de ponta.</p>
+                    </div>
+                </div>
+    
+                <div class="card-pais">
+                    <div class="foto-pais" style="background-image: url('https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?q=80&w=500');"></div>
+                    <div class="info-pais">
+                        <h3>Copenhague, Dinamarca</h3>
+                        <p>Conhecer o design escandinavo e a cultura nórdica.</p>
+                    </div>
+                </div>
+    
+                <div class="card-pais">
+                    <div class="foto-pais" style="background-image: url('https://images.unsplash.com/photo-1521024221340-efe7d7fa239b?q=80&w=500');"></div>
+                    <div class="info-pais">
+                        <h3>Reykjavik, Islândia</h3>
+                        <p>Ver a Aurora Boreal e paisagens que parecem outro planeta.</p>
+                    </div>
+                </div>
+    
+                <div class="card-pais">
+                    <div class="foto-pais" style="background-image: url('https://cdn.authentik.com/canada/uploads/images/orig/dec_toronto/3-coucher-soleil-toronto.jpg');"></div>
+                    <div class="info-pais">
+                        <h3>Toronto, Canadá</h3>
+                        <p>Experiência multicultural e contato com a natureza vasta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h1 class="logo-footer">GS<span>.dev</span></h1>
+                <p>Transformando café em código e sonhos em órbita.</p>
+            </div>
+    
+            <div class="footer-social">
+                <h3>Conecte-se</h3>
+                <div class="social-links">
+                    <a href="#" class="social-btn">GitHub</a>
+                    <a href="#" class="social-btn">LinkedIn</a>
+                    <a href="#" class="social-btn">Instagram</a>
+                </div>
+            </div>
+    
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p>gustavo@email.com</p>
+                <span class="badge">Disponível para Projetos</span>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>Desenvolvido com foco e muito café ☕</p>
+            <p class="copyright">&copy; 2026 Gustavo S. | Futuro Astronauta 🚀</p>
+        </div>
+    </footer>
 
-<footer>
-    <p>Página criada para o projeto de HTML/CSS - 2026</p>
-</footer>
+    <script>
+        const btnMenu = document.getElementById('barra-menu');
+        const menuLateral = document.getElementById('menuLateral');
 
+        btnMenu.addEventListener('click', (e) => {
+            e.stopPropagation();
+            menuLateral.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.tela-menu-3 a').forEach(link => {
+            link.addEventListener('click', () => menuLateral.classList.remove('active'));
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!menuLateral.contains(e.target) && !btnMenu.contains(e.target)) {
+                menuLateral.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
