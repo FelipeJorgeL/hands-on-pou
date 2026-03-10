@@ -1,0 +1,229 @@
+:root {
+    --primary: #d4a373;
+    --bg-dark: #121210;
+    --text-main: #ffffff;
+    --text-muted: #cccccc;
+    --glass: rgba(18, 18, 16, 0.7);
+    --font-inter: 'Inter', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-inter);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    background-image: url('../img/LA.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);
+    z-index: -1;
+}
+
+.main-header {
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    margin: 1.5rem auto;
+    width: calc(100% - 4rem);
+    max-width: 1400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.header-content {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.content-wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+    flex: 1;
+}
+
+.hero-section {
+    flex: 1;
+    min-width: 400px;
+    text-align: left;
+}
+
+.subtitle {
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.main-title {
+    font-family: var(--font-secondary);
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 2.5rem;
+    font-weight: 900;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.description {
+    max-width: 500px;
+    margin-bottom: 3rem;
+}
+
+.description p {
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.quote {
+    font-style: italic;
+    border-left: 2px solid var(--primary);
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.gallery-section {
+    flex: 1;
+    min-width: 400px;
+}
+
+.section-label {
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    filter: contrast(1.15) saturate(1.2) brightness(1.05);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    filter: contrast(1.2) saturate(1.3) brightness(1.15);
+    transform: translateY(-5px);
+}
+
+.card.wide {
+    grid-column: span 2;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+.main-footer {
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    flex-shrink: 0;
+}
+
+.main-footer p {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    color: #555;
+}
