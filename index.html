@@ -1,136 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Lugar que quero conhecer</title>
-    <link rel="stylesheet" href="style.css">
-    <style>*{
-    font-family: Arial, sans-serif;
-    background-color: rgb(34, 234, 167);
-    }</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares - Explorando Sonhos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f0f8ff;
-        }
 
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+    <header class="topo">
+        <div class="container flex-entre">
+            <div class="logo">
+                <h2>LUGARES</h2>
+            </div>
+        </div>
+    </header>
 
-        h1 {
-            color: #8b2e63;
-        }
+    <main class="principal">
+        <section class="hero">
+            <div class="container centro">
+                <div class="etiqueta">LUGARES QUE QUEREMOS CONHECER</div>
+                <h1 class="titulo-capa">EXPLORANDO NOSSOS <span>SONHOS</span></h1>
+               
+            </div>
+            <div class="blur-fundo">
+                <div class="bola bola-1"></div>
+                <div class="bola bola-2"></div>
+            </div>
+        </section>
+        <section class="galeria-destinos">
+            <div class="card-destino" style="background-image: url('assets/img/LA.png');">
+                <div class="overlay"></div>
+                <div class="info-destino">
+                    <span class="tag">Estados Unidos</span>
+                    <h2>LOS ANGELES</h2>
+                    <p>Felipe</p>
+                    <a href="html/felipe.html" class="btn-ver">Ver Página do Felipe</a>
+                </div>
+            </div>
 
-        main {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+            <div class="card-destino" style="background-image: url('assets/img/suica2.webp');">
+                <div class="overlay"></div>
+                <div class="info-destino">
+                    <span class="tag">Europa</span>
+                    <h2>SUÍÇA</h2>
+                    <p>Luiza</p>
+                    <a href="html/luiza.html" class="btn-ver">Ver Página da Luiza</a>
+                </div>
+            </div>
 
-        section {
-            margin-bottom: 20px;
-        }
+            <div class="card-destino" style="background-image: url('assets/img/rodeo-drive.jpg');">
+                <div class="overlay"></div>
+                <div class="info-destino">
+                    <span class="tag">Perfil</span>
+                    <h2>GUSTAVO</h2>
+                    <p>Um pouco sobre quem eu sou</p>
+                    <a href="html/gustavo.html" class="btn-ver">Ver Página do Gustavo</a>
+                </div>
+            </div>
 
-        h2 {
-            color: #8b2e63;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #555555;
-        }
-    </style>
-<header>
-    <h1>Lugar que tenho vontade de conhecer</h1>
-    <p>Preencha as informações sobre um lugar do mundo que você gostaria de visitar.</p>
-</header>
-
-<main>
-    <section id="aluno">
-        <h2>Sobre o aluno</h2>
-        <p>Nome: <strong>Mayumi Kimura Itikawa</strong></p>
-        <p>Turma: 2ºX</p>
-    </section>
-
-    <section id="lugar">
-        <h2>O lugar dos meus sonhos</h2>
-        <p><strong>Nome do lugar:</strong> Suiça</p>
-        <p><strong>Por que quero conhecer esse lugar?</strong></p>
-        <p>
-    A Suíça é um país conhecido por suas paisagens deslumbrantes, incluindo os Alpes suíços,
-    lagos cristalinos e cidades encantadoras. Eu gostaria de conhecer a Suíça para experimentar a beleza natural.
-        </p>
-    </section>
-
-    <section id="curiosidades">
-        <h2>Curiosidades sobre esse lugar</h2>
-        <ul>
-            <li>IDH alto</li>
-            <li>Tem muitos gatos nas ruas</li>
-            <li>Dá pra andar com o celular na mão</li>
-        </ul>
-    </section>
-
-    <section id="Arthur">
-        <h2>Sobre o aluno</h2>
-        <p>Nome: <strong>TuTu</strong></p>
-        <p>Turma: 2ºD</p>
-    </section>
-
-    <section id="Artlugar">
-        <h2>O lugar dos meus sonhos</h2>
-        <p><strong>Nome do lugar:</strong> tóquio</p>
-        <p><strong>Por que quero conhecer esse lugar?</strong></p>
-        <p>
-            felipe jorge disse que iria, e eu quero ir agora
-        </p>
-    </section>
-
-    <section id="Artcuriosidades">
-        <h2>Curiosidades sobre esse lugar</h2>
-        <ul>
-            <li>tem anime</li>
-            <li>felipe jorge gostaria de ir </li>
-            <li>Felipe jorge gosta da cultura</li>
-        </ul>
-    </section>
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <a href="gustavo.html">Pagina do gustavo</a>
+            <div class="card-destino" style="background-image: url('https://images.unsplash.com/photo-1648534092296-272a36375e45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800');">
+                <div class="overlay"></div>
+                <div class="info-destino">
+                    <span class="tag">Japão</span>
+                    <h2>AICHI</h2>
+                    <p>Mayumi</p>
+                    <a href="html/may.html" class="btn-ver">Ver Página da Mayumi</a>
+                </div>
+            </div>
+            
+            <div class="card-destino future-card">
+                <div class="overlay"></div>
+                <div class="info-destino">
+                    <span class="tag">Mistério</span>
+                    <h2>A DESCOBRIR</h2>
+                    <p>Qual será a nossa próxima parada?</p>
+                    <a href="#" class="btn-ver">Em Breve</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>Trabalho de HTML/CSS - Lugares que queremos conhecer</p>
+    <footer class="rodape">
+        <div class="container flex-entre">
+            <p class="copy">&copy; 2026 Lugares dos Sonhos. Todos os direitos reservados.</p>
+            <div class="sociais">
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+                <a href="#">IG</a>
+            </div>
+        </div>
     </footer>
 
 </body>
-
 </html>
