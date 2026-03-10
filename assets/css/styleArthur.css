@@ -1,0 +1,120 @@
+:root {
+    --cor-fundo: #000000;         
+    --cor-texto-claro: #FFFFFF; 
+    --cor-texto-cinza: #A1A1AA;  
+    --cor-destaque: #8B5CF6;      
+    --cor-destaque-hover: #6D28D9;
+    --cor-fundo-cartao: #111111; 
+    --borda-suave: #27272A;       
+    
+    --fonte-padrao: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-claro);
+    font-family: var(--fonte-padrao);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+#cabecalho-principal {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-bottom: 1px solid var(--borda-suave);
+}
+
+.titulo-principal {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.05em; 
+}
+
+.subtitulo-principal {
+    font-size: 1.1rem;
+    color: var(--cor-destaque);
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+
+#conteudo-principal {
+    padding: 4rem 2rem;
+    max-width: 1200px; 
+    margin: 0 auto;    
+}
+
+.grade-destinos {
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.cartao-destino {
+    background-color: var(--cor-fundo-cartao);
+    border: 1px solid var(--borda-suave);
+    border-radius: 12px; 
+    overflow: hidden;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.cartao-destino:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(139, 92, 246, 0.15);
+    border-color: var(--cor-destaque);
+}
+
+.imagem-destino {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; 
+    display: block;
+    background-color: var(--borda-suave); 
+}
+
+.informacoes-destino {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    gap: 1rem;
+}
+
+.titulo-destino {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.botao-explorar {
+    align-self: center; 
+    background-color: transparent;
+    color: var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-explorar:hover {
+    background-color: var(--cor-destaque-hover);
+    color: var(--cor-texto-claro);
+    border-color: var(--cor-destaque-hover);
+}
+
+#rodape-principal {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--borda-suave);
+    color: var(--cor-texto-cinza);
+    font-size: 0.9rem;
+}
