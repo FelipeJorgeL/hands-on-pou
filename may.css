@@ -1,0 +1,376 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color:#2d2d2d;
+    line-height:1.6;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.header{
+    background-color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    border-bottom:1px solid #c06a86;
+    padding-top:20px;
+    padding-bottom:20px;
+    z-index:9999; 
+}
+
+/* centraliza conteúdo */
+.container{
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/* nav */
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* logo */
+.logo{
+    color:#c06a86;
+    font-size:24px;
+}
+
+/* menu */
+.menu{
+    list-style:none;
+    display:flex;
+}
+
+/* espaço entre links */
+.menu li{
+    margin-left:30px;
+}
+
+/* link */
+.menu a{
+    text-decoration:none;
+    color:#2d2d2d;
+}
+
+/* hover */
+.menu a:hover{
+    color:#c06a86;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+    height:100vh;
+    padding-top:80px; /* espaço para o header */
+    background-image:url("https://images.unsplash.com/photo-1648534092296-272a36375e45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.hero-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(192,106,134,0.5);
+}
+
+.hero-content{
+    position:relative;
+    text-align:center;
+    color:white;
+}
+
+.hero-title-jp{
+    font-size:72px;
+    margin-bottom:20px;
+}
+
+.hero-title-en{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero-text{
+    font-size:24px;
+}
+
+/* ---------------- SOBRE ---------------- */
+
+.about{
+    padding-top:80px;
+    padding-bottom:80px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#f1c8d3;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    color:#c06a86;
+    margin-bottom:50px;
+}
+
+.about-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.about-text{
+    font-size:18px;
+}
+
+.paragraph{
+    margin-bottom:20px;
+}
+
+/* cards de estatísticas */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.stat-card{
+    background-color:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+.stat-number{
+    font-size:36px;
+    color:#c06a86;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.stat-label{
+    color:#6d6d6d;
+}
+
+/* ---------------- ATRAÇÕES ---------------- */
+
+.attractions{
+    padding-top:80px;
+    padding-bottom:80px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.section-description{
+    text-align:center;
+    color:#6d6d6d;
+    margin-bottom:50px;
+}
+
+.attractions-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+}
+
+.attraction-card{
+    cursor:pointer;
+}
+
+.attraction-image{
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+.attraction-image img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.attraction-title{
+    font-size:20px;
+    color:#c06a86;
+    margin-bottom:10px;
+}
+
+.attraction-text{
+    color:#6d6d6d;
+}
+
+/* ---------------- CULTURA ---------------- */
+
+.culture{
+    padding:80px 20px;
+    background-color:#e8b7c4;
+}
+
+.culture-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:30px;
+    margin-bottom:60px;
+}
+
+.culture-card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.culture-icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.culture-title{
+    color:#c06a86;
+    margin-bottom:10px;
+}
+
+.culture-text{
+    color:#6d6d6d;
+}
+
+.culture-stats{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+}
+
+.culture-stats-title{
+    text-align:center;
+    color:#c06a86;
+    margin-bottom:30px;
+}
+
+.culture-stats-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+}
+
+.culture-stat{
+    text-align:center;
+}
+
+.culture-stat-number{
+    font-size:48px;
+    color:#c06a86;
+    font-weight:bold;
+}
+
+.culture-stat-text{
+    color:#6d6d6d;
+}
+
+/* ---------------- GASTRONOMIA ---------------- */
+
+.gastronomy{
+    padding:80px 20px;
+    background:#e6a6b7;
+}
+
+.gastronomy-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-bottom:50px;
+}
+
+.gastronomy-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.gastronomy-list{
+    display:grid;
+    gap:20px;
+}
+
+.dish-card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+.dish-title{
+    color:#c06a86;
+    margin-bottom:10px;
+}
+
+.dish-text{
+    color:#6d6d6d;
+}
+
+.gastronomy-info{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+}
+
+.gastronomy-info-title{
+    text-align:center;
+    color:#c06a86;
+    margin-bottom:20px;
+}
+
+.gastronomy-info-text{
+    text-align:center;
+    color:#6d6d6d;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.footer{
+    background:#c06a86;
+    color:white;
+    padding:50px 20px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-title{
+    margin-bottom:20px;
+}
+
+.footer-links{
+    list-style:none;
+}
+
+.footer-links li{
+    margin-bottom:10px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.2);
+    margin-top:30px;
+    padding-top:20px;
+    text-align:center;
+}
