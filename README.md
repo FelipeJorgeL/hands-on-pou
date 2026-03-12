@@ -33,3 +33,23 @@ A proposta é explorar conceitos de **desenvolvimento web, organização de layo
 ---
 
 # 📂 Estrutura do Projeto
+hands-on-pou
+│
+├── index.html
+│
+├── assets
+│ ├── css
+│ │ └── style.css
+│ └── img
+│ ├── LA.png
+│ ├── suica2.webp
+│ └── barcelona.jpg
+│
+├── html
+│ ├── felipe.html
+│ ├── luiza.html
+│ ├── gustavo.html
+│ ├── may.html
+│ └── arthur.html
+│
+└── README.md
